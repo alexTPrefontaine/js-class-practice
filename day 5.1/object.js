@@ -4,8 +4,20 @@ const bar = {
     occupation: "student"
 };
 
-const umbrella = {
+const umbrella1 = {
     color: "blue",
+    availableColors: ["blue", "green"],
+    open: function () {
+        console.log("Opening the amazing umbrella");
+    },
+    handle: {
+        color: "black",
+        material: "plastic"
+    }
+};
+
+const umbrella2 = {
+    color: "red",
     availableColors: ["blue", "green"],
     open: function () {
         console.log("Opening the umbrella");
@@ -16,4 +28,16 @@ const umbrella = {
     }
 };
 
-umbrella.open();
+const umbrellas = [umbrella1, umbrella2];
+
+// umbrella.open();
+
+// Create objects in array directly
+const foo2 = [
+    {
+        name: "Jane"
+    },
+    {
+        name: "John"
+    }
+]
